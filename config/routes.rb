@@ -15,6 +15,7 @@ SecureMessage::Application.routes.draw do
   end
 
 
+
   #get "register/callback"
   #
   #get "register/failure"

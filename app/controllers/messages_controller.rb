@@ -5,6 +5,7 @@ class MessagesController < ApplicationController
   @@isAuth=false
   @@msg=""
 
+
   def index
     @messages = Message.all
 
@@ -47,12 +48,16 @@ class MessagesController < ApplicationController
   end
 
   def new
-    @message = Message.new
+    if !user_signed_in?
+      redirect_to "/auth/twitter"
+  else
+     @message = Message.new
 
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @message }
     end
+  end
   end
 
   def create

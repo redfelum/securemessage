@@ -1,7 +1,6 @@
 # coding: utf-8
 class RegisterController < ApplicationController
   def callback
-    puts "diman"
     #    raise request.env["omniauth.auth"].to_yaml
     auth_hash = request.env['omniauth.auth']
     user = login_by_hash(auth_hash)
