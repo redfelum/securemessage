@@ -20,7 +20,7 @@ class MessagesController < ApplicationController
 
   def validate_pass
     begin
-      @pass=params[:q]
+      @pass=params[:pass]
       @message = Message.where(short_url: params[:id]).first
       @@msg=Message.decrupt_message(@message.message_text, @pass)
       @@isAuth=true

@@ -2,7 +2,7 @@
 
 <%= form_tag(:controller=>"messages",:action=>"validate_pass",:id=>params[:id]) do %>
     <%= label_tag(:q, "Введите пароль") %>
-    <%= text_field_tag(:q) %>
+    <%= password_field_tag(:pass) %>
     <%=hidden_field_tag("id", params[:id])%>
     <%= submit_tag "Confirm"%>
 <% end %>
