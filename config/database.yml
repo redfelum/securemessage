@@ -5,12 +5,10 @@
 #   gem 'sqlite3'
 development:
   adapter: postgresql
-  database: 'SecureMessage'
-  host: localhost
-  username: postgres
-  password: 123456
-  pool: 5
-  timeout: 5000
+  database: 'd25bm2rhl493cm'
+  host: ec2-54-221-236-4.compute-1.amazonaws.com
+  username: yedveodhfuytnm
+  password: pBunj3nb2BrebjdXiI5AE7bkwF
 
 
 # Warning: The database defined as "test" will be erased and
