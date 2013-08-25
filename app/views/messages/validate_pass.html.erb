@@ -1,0 +1,8 @@
+<p id="notice"><%= notice %></p>
+
+<%= form_tag(:controller=>"messages",:action=>"validate_pass",:id=>params[:id]) do %>
+    <%= label_tag(:q, "Введите пароль") %>
+    <%= text_field_tag(:q) %>
+    <%=hidden_field_tag("id", params[:id])%>
+    <%= submit_tag "Confirm"%>
+<% end %>
